@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import CardGame from "@/components/cardGame/page"
 import TeamA from '../../../../public/images/barcelona.png'
-import RealMadrid from '../../../../public/images/realMadrid.png'
+import RealMadrid from '../../../../public/images/realmadrid.png'
 import { useState } from 'react'
 
 

@@ -2,7 +2,7 @@
 import Link from "next/link"
 import { useState } from "react"
 import Image from 'next/image'
-import Real from '../../../public/images/realMadrid.png'
+import Real from '../../../public/images/realmadrid.png'
 import Barcelona from '../../../public/images/barcelona.png'
 import LaLiga from '../../../public/images/laliga.png'
 
