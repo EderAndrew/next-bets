@@ -4,7 +4,7 @@ import { useState } from "react"
 import Image from 'next/image'
 import Real from '../../../public/images/realmadrid.png'
 import Barcelona from '../../../public/images/barcelona.png'
-import LaLiga from '../../../public/images/laliga.png'
+import laliga from '@/../public/images/laliga.png'
 
 
 const Card = () => {
@@ -20,7 +20,7 @@ const Card = () => {
                 <span className="text-sm font-bold text-purple-500">La Liga</span>
                 <div>
                   <Image
-                    src={LaLiga}
+                    src={laliga}
                     width={42}
                     height={42}
                     alt="La liga picture"
