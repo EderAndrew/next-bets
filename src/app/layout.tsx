@@ -3,6 +3,7 @@ import { Roboto } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/header/page'
 import Footer from '@/components/footer/page'
+import { Web3Modal } from '@/context/Web3Modal'
 
 const roboto = Roboto({ 
   weight: '400',
@@ -23,9 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <Header />
-          {children}
-        <Footer />
+        <Web3Modal>
+          <Header />
+            {children}
+          <Footer />
+        </Web3Modal> 
       </body>
     </html>
   )

@@ -1,7 +1,9 @@
 'use client'
+import { useWeb3Modal } from "@web3modal/wagmi1/react"
 import Link from "next/link"
 
 const Header = () => {
+    const { open } = useWeb3Modal()
     return(
         <header className="flex items-center justify-between w-full h-16 bg-slate-900 text-white px-10 shadow-md">
             <div className="flex gap-6">
@@ -11,7 +13,7 @@ const Header = () => {
                 <li><Link href={"/login"}>Claim</Link></li>
             </ul>
             </div>
-            <Link href="/" className="border text-sm px-2 py-1 rounded-md cursor-pointer">Connect</Link>
+            <button onClick={() => open()} className="border text-sm px-2 py-1 rounded-md cursor-pointer">Connect</button>
         </header>
     )
 }
