@@ -2,8 +2,8 @@
 import Link from "next/link"
 import { useState } from "react"
 import Image from 'next/image'
-import Real from '../../../public/images/realmadrid.png'
-import Barcelona from '../../../public/images/barcelona.png'
+import real from '@/../public/images/realmadrid.png'
+import barca from '@/../public/images/barcelona.png'
 import laliga from '@/../public/images/laliga.png'
 
 
@@ -30,7 +30,7 @@ const Card = () => {
                     <span className="flex flex-col items-center justify-center h-full">
                         <div>
                         <Image
-                            src={Real}
+                            src={real}
                             width={38}
                             height={38}
                             alt="La liga picture"
@@ -49,7 +49,7 @@ const Card = () => {
                     <span className="flex flex-col items-center justify-center h-full">
                         <div>
                             <Image
-                                src={Barcelona}
+                                src={barca}
                                 width={38}
                                 height={38}
                                 alt="La liga picture"
