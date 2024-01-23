@@ -6,6 +6,7 @@ import Real from '../../../public/images/realmadrid.png'
 import Barcelona from '../../../public/images/barcelona.png'
 import LaLiga from '../../../public/images/laliga.png'
 
+
 const Card = () => {
     const [day, setDay] = useState(new Date())
     return(
